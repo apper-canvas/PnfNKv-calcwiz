@@ -15,7 +15,7 @@ function Home() {
         className="mb-6 text-center"
       >
         <h1 className="text-3xl font-bold mb-2 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-          Welcome to CalcWiz
+          Welcome to Ical
         </h1>
         <p className="text-surface-600 dark:text-surface-400">
           Your smart calculator for everyday calculations

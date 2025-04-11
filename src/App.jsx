@@ -31,7 +31,7 @@ function App() {
             transition={{ duration: 0.5 }}
             className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
           >
-            CalcWiz
+            Ical
           </motion.div>
         </div>
         
@@ -53,7 +53,7 @@ function App() {
       </main>
       
       <footer className="mt-auto py-4 text-center text-sm text-surface-500">
-        <p>© {new Date().getFullYear()} CalcWiz. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Ical. All rights reserved.</p>
       </footer>
     </div>
   )
