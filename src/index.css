@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .calc-button {
+    @apply relative flex items-center justify-center h-14 rounded-xl font-medium text-lg transition-all duration-200 active:scale-95;
+  }
+  
+  .calc-button-number {
+    @apply calc-button bg-surface-100 dark:bg-surface-800 text-surface-800 dark:text-surface-100 hover:bg-surface-200 dark:hover:bg-surface-700;
+  }
+  
+  .calc-button-operation {
+    @apply calc-button bg-primary-light/10 dark:bg-primary-dark/20 text-primary-dark dark:text-primary-light hover:bg-primary-light/20 dark:hover:bg-primary-dark/30;
+  }
+  
+  .calc-button-function {
+    @apply calc-button bg-secondary-light/10 dark:bg-secondary-dark/20 text-secondary-dark dark:text-secondary-light hover:bg-secondary-light/20 dark:hover:bg-secondary-dark/30;
+  }
+  
+  .calc-button-equals {
+    @apply calc-button bg-primary text-white hover:bg-primary-dark;
+  }
+  
+  .calc-button-clear {
+    @apply calc-button bg-accent/10 dark:bg-accent/20 text-accent hover:bg-accent/20 dark:hover:bg-accent/30;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .glass-effect {
+    @apply bg-white/70 dark:bg-surface-800/70 backdrop-blur-md;
+  }
+  
+  .neumorphic-light {
+    @apply shadow-neu-light bg-surface-50;
+  }
+  
+  .neumorphic-dark {
+    @apply shadow-neu-dark bg-surface-800;
+  }
+}
